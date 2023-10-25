@@ -1,0 +1,130 @@
+@charset "utf-8";
+@font-face {
+    font-family: font1;
+    src: url(fontes/electrical.ttf);
+}
+
+header h1{
+    font-family: font1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://i.pinimg.com/1200x/a2/a9/82/a2a982965d033d7783168da7db3c3ce1.jpg);
+    background-repeat: repeat;
+    background-size: 10%;
+    
+
+}
+
+header{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-style: oblique;
+    background-color: rgba(0, 0, 0, 0.534);
+    background-size: ;
+    text-shadow: 10px -6px 7px  rgb(255, 0, 234);
+}
+
+img{
+    border-radius: 30px
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+.navegacao{
+    position: absolute; /* Posição em relação ao container */
+    bottom: 20px; /* Distância a partir da base */
+    left: 50%; /* Distância a partir da esquerda */
+    transform: translate(-50%); /* Alterar o eixo principal */
+    display: flex; /* Colocar o conteúdo lado a lado */
+}
+
+.bar{
+    background-color: rgba(180, 180, 180, 0.575); /* plano de fundo do indicador */
+    width: 50px; /* largura do indicador */
+    height: 10px; /* altura do indicador */
+    margin: 6px; /* espaço entre os indicadores */
+    transition: .3s; /* transição no hover */
+    cursor: pointer; /* ponteiro do mouse */
+}
+
+.bar:hover{
+    background-color: rgba(255, 0, 191, 0.726);
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.imagem{
+    width:16.6666666667%;
+    transition: 1.5s;
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333333%;;
+
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -83.3333333333%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgba(3, 3, 3, 0.562);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: 1.2em;
+    color: aliceblue;
+    text-shadow: 7px -3px 4px rgb(255, 0, 255);
+}
